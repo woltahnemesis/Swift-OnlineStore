@@ -21,6 +21,7 @@
 		D12A675E24C8F6FE0097DAF0 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A675D24C8F6FE0097DAF0 /* Cart.swift */; };
 		D12A676024C905AD0097DAF0 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A675F24C905AD0097DAF0 /* CartTableViewCell.swift */; };
 		D12A676224C905CB0097DAF0 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A676124C905CB0097DAF0 /* CartViewController.swift */; };
+		D1D826D424CE2D3000BD8CA5 /* CartClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D826D324CE2D3000BD8CA5 /* CartClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D12A675D24C8F6FE0097DAF0 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		D12A675F24C905AD0097DAF0 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		D12A676124C905CB0097DAF0 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		D1D826D324CE2D3000BD8CA5 /* CartClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				D12A675F24C905AD0097DAF0 /* CartTableViewCell.swift */,
 				D12A675324C8DD390097DAF0 /* User.swift */,
 				D12A675D24C8F6FE0097DAF0 /* Cart.swift */,
+				D1D826D324CE2D3000BD8CA5 /* CartClass.swift */,
 			);
 			path = "Online-Store-v2";
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				D12A676224C905CB0097DAF0 /* CartViewController.swift in Sources */,
 				D12A676024C905AD0097DAF0 /* CartTableViewCell.swift in Sources */,
 				D12A675424C8DD390097DAF0 /* User.swift in Sources */,
+				D1D826D424CE2D3000BD8CA5 /* CartClass.swift in Sources */,
 				D12A675C24C8F2880097DAF0 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

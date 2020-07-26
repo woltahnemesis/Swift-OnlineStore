@@ -29,12 +29,6 @@ class ShopViewController: UIViewController, UITabBarDelegate, UITableViewDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.names = addedItems.items
-        self.prices = addedItems.prices
-        self.images = addedItems.images
-        
-        print(self.names)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -74,6 +68,17 @@ class ShopViewController: UIViewController, UITabBarDelegate, UITableViewDelegat
 
     @IBAction func btnCart(_ sender: Any) {
         
+        let cartObj = CartClass()
+        
+        cartObj.quantity()
+        
+        print(cartObj.localQuantity)
+        
+        self.quantity = cartObj.localQuantity
+        self.images = cartObj.localImages
+        self.names = cartObj.localItems
+        self.prices = cartObj.localPrices
+        
         performSegue(withIdentifier: "shopToCart", sender: self)
     }
     
@@ -84,6 +89,6 @@ class ShopViewController: UIViewController, UITabBarDelegate, UITableViewDelegat
         cartVC.cartLocalImages = self.images
         cartVC.cartLocalItems = self.names
         cartVC.cartLocalPrices = self.prices
-//        cartVC.cartLocalQuantity = self.quantity
+        cartVC.cartLocalQuantity = self.quantity
     }
 }

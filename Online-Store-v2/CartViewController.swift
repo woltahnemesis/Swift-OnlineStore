@@ -19,13 +19,15 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         
         print(cartLocalItems)
+        print(cartLocalPrices)
+        print("Images: \(cartLocalImages)")
     }
     
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return cartLocalItems.count
+        return cartLocalQuantity.count
         
     }
     
@@ -40,7 +42,7 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tempCell.cartUIImages.image = UIImage(named: cartLocalImages[indexPath.row] + ".jpeg")
         
-//        tempCell.cartLabelPrice.text = cartLocalQuantity[indexPath.row]
+        tempCell.quantity.text = cartLocalQuantity[indexPath.row]
         
         tempCell.cartBtnAdd.tag = indexPath.row
         
@@ -48,10 +50,15 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    
     @IBAction func btnPlus(_ sender: UIButton) {
+        
+        let cartObj = CartClass()
+        
         
         if sender.tag == 0 {
             print("Tag 0")
+            cartObj.localQuantity[0] = String(Int(cartObj.localQuantity[0])! + 1)
         } else if sender.tag == 1 {
             print("Tag 1")
         }
