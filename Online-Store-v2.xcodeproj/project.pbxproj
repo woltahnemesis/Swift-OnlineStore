@@ -21,6 +21,7 @@
 		D12A675E24C8F6FE0097DAF0 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A675D24C8F6FE0097DAF0 /* Cart.swift */; };
 		D12A676024C905AD0097DAF0 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A675F24C905AD0097DAF0 /* CartTableViewCell.swift */; };
 		D12A676224C905CB0097DAF0 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A676124C905CB0097DAF0 /* CartViewController.swift */; };
+		D18FB4B624CE755B00F996B5 /* ModifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18FB4B524CE755B00F996B5 /* ModifyViewController.swift */; };
 		D1D826D424CE2D3000BD8CA5 /* CartClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D826D324CE2D3000BD8CA5 /* CartClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		D12A675D24C8F6FE0097DAF0 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		D12A675F24C905AD0097DAF0 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		D12A676124C905CB0097DAF0 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		D18FB4B524CE755B00F996B5 /* ModifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyViewController.swift; sourceTree = "<group>"; };
 		D1D826D324CE2D3000BD8CA5 /* CartClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 				D12A675724C8E1CF0097DAF0 /* ShopViewController.swift */,
 				D12A675B24C8F2880097DAF0 /* DetailViewController.swift */,
 				D12A676124C905CB0097DAF0 /* CartViewController.swift */,
+				D18FB4B524CE755B00F996B5 /* ModifyViewController.swift */,
 				D12A674524C8DB800097DAF0 /* Main.storyboard */,
 				D12A674824C8DB830097DAF0 /* Assets.xcassets */,
 				D12A674A24C8DB830097DAF0 /* LaunchScreen.storyboard */,
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D12A675624C8DFEA0097DAF0 /* HomeViewController.swift in Sources */,
+				D18FB4B624CE755B00F996B5 /* ModifyViewController.swift in Sources */,
 				D12A675E24C8F6FE0097DAF0 /* Cart.swift in Sources */,
 				D12A674424C8DB800097DAF0 /* ViewController.swift in Sources */,
 				D12A675824C8E1CF0097DAF0 /* ShopViewController.swift in Sources */,

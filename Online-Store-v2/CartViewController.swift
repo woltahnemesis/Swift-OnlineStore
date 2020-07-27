@@ -21,9 +21,8 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         print(cartLocalItems)
         print(cartLocalPrices)
         print("Images: \(cartLocalImages)")
+        
     }
-    
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -44,24 +43,27 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tempCell.quantity.text = cartLocalQuantity[indexPath.row]
         
-        tempCell.cartBtnAdd.tag = indexPath.row
-        
         return tempCell
         
     }
     
-    
-    @IBAction func btnPlus(_ sender: UIButton) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let cartObj = CartClass()
+        // Instantiation
+             let modifyVC: ModifyViewController  = self.storyboard?.instantiateViewController(identifier: "ModifyViewController") as! ModifyViewController
+             
+             // Passes data to another View Controller
+             modifyVC.localImage = UIImage(named: cartLocalImages[indexPath.row] + ".jpeg")
         
+             modifyVC.localName = cartLocalItems[indexPath.row]
         
-        if sender.tag == 0 {
-            print("Tag 0")
-            cartObj.localQuantity[0] = String(Int(cartObj.localQuantity[0])! + 1)
-        } else if sender.tag == 1 {
-            print("Tag 1")
-        }
+             modifyVC.localPrice = cartLocalPrices[indexPath.row]
+        
+             modifyVC.localQuantity = cartLocalQuantity[indexPath.row]
+        
+             // Changes the screen view to another view controller
+             self.navigationController?.pushViewController(modifyVC, animated: true)
+             
     }
     
 }
